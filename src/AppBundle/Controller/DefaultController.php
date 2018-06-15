@@ -88,4 +88,12 @@ class DefaultController extends Controller
     }
 
 
+    /**
+     * @Route("/trophy", name="trophy")
+     */
+    public function trophyAction()
+    {
+
+        return $this->render('trophy/index.html.twig');
+    }
 }

@@ -20,7 +20,34 @@
 
 }
 
+.trophys {
+  background-color:black;
+  background-position: center center;
+  background-attachment: fixed;
+  height:100vh;
+  h1 {
+    color: pink;
+    box-shadow:  10px 6px 6px  black;
+    font-weight: bold;
+  }
+  h2 {
+    color:white;
+  }
 
+}
+
+.baba {
+  background-color: black;
+  img {
+    opacity: 0.5;
+  }
+  p {
+    color:white;
+    font-weight: bold;
+
+  }
+
+}
 
 
 
@@ -35,15 +62,7 @@
 .cf:after{
   clear:both;
 }
-h1{
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 10px;
-  color:#444;
-  background-color: darkgrey;
-  padding: 10px;
-  font-size: 40px;
-}
+
 .container{
   position: relative;
   margin: -10px auto;
