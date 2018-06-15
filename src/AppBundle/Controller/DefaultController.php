@@ -93,7 +93,15 @@ class DefaultController extends Controller
      */
     public function trophyAction()
     {
+        $em = $this->getDoctrine()->getManager();
 
-        return $this->render('trophy/index.html.twig');
+        $currents= $em->getRepository(ArtisticCurrent::class)->findAll();
+        $artworks = [];
+        foreach ($currents as $current) {
+            $artworks[$current->getName()]= $em->getRepository(Artwork::class)->findByCurrent($current);
+        }
+        return $this->render('trophy/index.html.twig',[
+            'artworksByCurrent' => $artworks,
+        ]);
     }
 }

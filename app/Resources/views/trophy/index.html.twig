@@ -8,20 +8,21 @@
         </div>
         <div class="row">
             <div class="col">
-                <h2>Parcours impressionniste</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h2>Parcours cubiste</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h2>Parcours fauviste</h2>
-            </div>
-        </div>
 
+                {% for current, artworks in artworksByCurrent %}
+                    <h2>{{ current }}</h2>
+                    <ul>
+                        {% for artwork in artworks %}
+                            <li>
+                                {{ artwork.title }}
+                                {% for user in artwork.users if user == app.user %}
+                                    vu
+                                {% endfor %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endfor %}
+        </div>
     </div>
     <div class="container-fluid baba">
         <div class="row ">

@@ -20,18 +20,22 @@
 
 }
 
+
 .trophys {
   background-color:black;
   background-position: center center;
   background-attachment: fixed;
   height:100vh;
   h1 {
-    color: pink;
+    color: mediumvioletred;
     box-shadow:  10px 6px 6px  black;
     font-weight: bold;
   }
   h2 {
     color:white;
+  }
+  ul>li {
+    color: white;
   }
 
 }
