@@ -15,7 +15,7 @@
                         {% for artwork in artworks %}
                             <li>
                                 {{ artwork.title }}
-                                <img src=""{{ vich_uploader_asset(artwork, 'imageFile') }} >
+                                <img src="{{ vich_uploader_asset(artwork, 'imageFile') }}" >
                                 {% for user in artwork.users if user == app.user %}
                                     vu
                                 {% endfor %}
