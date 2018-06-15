@@ -13,6 +13,9 @@
   background-attachment: fixed;
   height:100vh;
 }
+.grey {
+  filter: grayscale(60%);
+}
 
 .texthome{
 
@@ -37,13 +40,17 @@
   ul>li {
     color: white;
   }
+  img {
+    max-height: 120px;
+    max-width: 120px;
+  }
 
 }
 
 .baba {
   background-color: black;
   img {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   p {
     color:white;
